@@ -152,6 +152,7 @@ void pin2high()
   // ekrani sil 1 = evet, yazi büyüklügü = 1, pozisyon x=2 , y=2 , renk = beyaz, metin
   oledWrite(1, 1, 2, 2, WHITE, "pin 2 high");
   Serial.println("işlenen komut: pin 2 high");
+  TelnetMsg("pin 2 high yapıldı");
 }
 //*************************************************************************************
 
@@ -161,6 +162,7 @@ void pin2low()
   digitalWrite(2, LOW);
   oledWrite(1, 1, 2, 2, WHITE, "pin 2 low");
   Serial.println("işlenen komut: pin 2 low");
+  TelnetMsg("pin 2 low yapıldı");
 }
 
 void setup() {
